@@ -1,0 +1,20 @@
+<config>
+  <fields>
+   <field path="//employee/@id" type="ATTRIBUTE" transform="IDENTIFIER" />
+   <field path="//employee/firstName" type="TEXT" transform="NAME" />
+   <field path="//employee/lastName" type="TEXT" transform="NAME" />
+   <field path="//department/@id" type="ATTRIBUTE" transform="NUMERIC_IDENTIFIER" />
+   <field path="//employee/phone" type="TEXT" transform="NUMERIC_IDENTIFIER" />
+   <field path="//employee/startdate" type="TEXT" transform="DATE_OFFSET">
+   	<params>
+		<entry>
+			<key>SIMPLE_DATE_FORMAT</key>
+			<value>MM/dd/yyyy</value>
+		</entry>
+	</params>
+   </field>
+   <field path="//employee/zip" type="TEXT" transform="ZIP_CODE" />
+   <field path="//employee/email" type="TEXT" transform="EMAIL" />
+   <field path="//employee/dob" type="TEXT" transform="BIRTHDATE" />
+  </fields>
+</config>

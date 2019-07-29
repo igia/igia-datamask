@@ -1,0 +1,36 @@
+{
+  "resourceType": "Patient",
+  "id": "686405eab5235b6fe4638259467971d0",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2018-06-18T21:46:58.789-0400"
+  },
+  "text": {
+    "status": "generated",
+    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003ePatient name is Orniu Claust\u003c/div\u003e"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "value": "c9b57500a017b4ae34df81da526b0528",
+      "assigner": {
+        "display": "AccMgr"
+      }
+    }
+  ],
+  "name": [
+    {
+      "family": "Claust",
+      "given": "Orniu"
+    }
+  ],
+  "telecom": [
+    {
+      "value": "(999)999-9999"
+    }
+  ],
+  "active": true,
+  "gender": "unknown",
+  "birthDate": "1929-10-09",
+  "deceasedBoolean": false
+}

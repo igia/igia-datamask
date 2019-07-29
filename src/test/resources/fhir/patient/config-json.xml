@@ -1,0 +1,12 @@
+<config>
+  <fields>
+     <field path="$.id" type="JSON" transform="IDENTIFIER" />
+     <field path="$.meta.lastUpdated" type="JSON" transform="DATE_OFFSET" />
+     <field path="$.identifier[*].value" type="JSON" transform="IDENTIFIER" />
+     <field path="$.name[*].family" type="JSON" transform="NAME" />
+     <field path="$.name[*].given" type="JSON" transform="NAME" />
+     <field path="$.telecom[*].value" type="JSON" transform="NUMERIC" />
+     <field path="$.birthDate" type="JSON" transform="BIRTHDATE" />
+     <field path="$.text.div" type="JSON" transform="TOKENIZE" />
+  </fields>
+</config>

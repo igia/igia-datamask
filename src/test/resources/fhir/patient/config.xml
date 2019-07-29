@@ -1,0 +1,20 @@
+<config>
+  <namespaces>
+     <namespace prefix="f" url="http://hl7.org/fhir"/>
+     <namespace prefix="x" url="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <fields>
+     <field path="//f:Bundle/f:id/@value" type="ATTRIBUTE" transform="IDENTIFIER" />
+     <field path="//f:meta/f:lastUpdated/@value" type="ATTRIBUTE" transform="DATE_OFFSET" />
+     <field path="//f:Patient/f:id/@value" type="ATTRIBUTE" transform="IDENTIFIER" />
+     <field path="//f:Patient/f:identifier/f:value/@value" type="ATTRIBUTE" transform="IDENTIFIER" />
+     <field path="//f:Patient/f:identifier/f:period/f:start/@value" type="ATTRIBUTE" transform="DATE_OFFSET" />
+     <field path="//f:Patient/f:identifier/f:period/f:end/@value" type="ATTRIBUTE" transform="DATE_OFFSET" />
+     <field path="//f:Patient/f:name/f:family/@value" type="ATTRIBUTE" transform="NAME" />
+     <field path="//f:Patient/f:name/f:given/@value" type="ATTRIBUTE" transform="NAME" />
+     <field path="//f:Patient/f:telecom/f:value/@value" type="ATTRIBUTE" transform="NUMERIC" />
+     <field path="//f:Patient/f:birthDate/@value" type="ATTRIBUTE" transform="BIRTHDATE" />
+     <field path="//f:Patient/f:text/node()" type="TEXT" transform="TOKENIZE" />
+     <field path="//f:fullUrl/@value" type="ATTRIBUTE" transform="URL" />
+  </fields>
+</config>

@@ -1,0 +1,26 @@
+<employees>
+    <employee id="101">
+        <firstName>Lokesh</firstName>
+        <lastName>Gupta</lastName>
+        <country>India</country>
+        <department id="25">
+            <name>ITS</name>
+        </department>
+        <phone type="home">012-345-6789</phone>
+        <startdate>01/01/2016</startdate>
+        <dob>2017-02-01T10:33:06.643123-07:00</dob>
+        <zip>02141</zip>
+        <email>101@igia.io</email>
+    </employee>
+    <employee id="102">
+        <firstName>Brian</firstName>
+        <lastName>Schultz</lastName>
+        <country>USA</country>
+        <department id="26">
+            <name>DEV</name>
+        </department>
+        <phone type="work">123-456-7890</phone>
+        <dob>1919-01-01</dob>
+        <email>102@io.org</email>
+    </employee>
+</employees>

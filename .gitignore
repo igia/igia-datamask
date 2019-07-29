@@ -1,0 +1,9 @@
+/.settings/
+/.classpath
+/target/
+*.log
+*.log*
+*-masked.xml
+*-masked.json
+.project
+*-output.xml
