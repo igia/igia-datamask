@@ -18,7 +18,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.igia</groupId>
 	<artifactId>igia-datamask</artifactId>
-	<version>0.3.0</version>
+	<version>0.3.2</version>
 	<packaging>jar</packaging>
 	<name>igia-datamask</name>
 	<description>A tool for masking data in JSON or XML containing PHI</description>
