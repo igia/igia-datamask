@@ -48,20 +48,6 @@ public class JsonSourceDocumentTest {
 				"src/test/resources/fhir/patient/patient-output.json"));
 	}
 	
-	@Test
-	@Ignore
-	public void testDeindentifyWithSchema() {
-		mask("json",
-				"src/test/resources/fhir/patient/config-json.xml", 
-				"src/test/resources/fhir/patient/patient-input.json", 
-				"src/test/resources/fhir/schema-json/Patient.schema.json",
-				"src/test/resources/fhir/patient/patient-output.json", 
-				false);
-		assertTrue(validateTransformation("src/test/resources/fhir/patient/config-json.xml",
-				"src/test/resources/fhir/patient/patient-input.json",
-				"src/test/resources/fhir/patient/patient-output.json"));
-	}
-	
 	private void mask(String inputType, String xmlConfigFile, String inputFile, String schema, String outputFile, Boolean skipXsdValidation) {
 		JsonSourceDocument doc = new JsonSourceDocument(inputType, xmlConfigFile, schema, inputFile, outputFile);
 		doc.mask(skipXsdValidation);
