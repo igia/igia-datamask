@@ -18,7 +18,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.igia</groupId>
 	<artifactId>igia-datamask</artifactId>
-	<version>0.3.2</version>
+	<version>0.3.3</version>
 	<packaging>jar</packaging>
 	<name>igia-datamask</name>
 	<description>A tool for masking data in JSON or XML containing PHI</description>
@@ -27,6 +27,14 @@
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
+		<repository>
+                        <id>nexus-public</id>
+                        <url> https://oss.sonatype.org/content/groups/public/</url>
+                </repository>
+                <repository>
+                        <id>nexus-staging</id>
+                        <url> https://oss.sonatype.org/content/groups/staging/</url>
+                </repository>
 	</repositories>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -35,6 +43,44 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+    <url>https://github.com/igia/igia-commons/</url>
+
+    <licenses>
+        <license>
+            <name>Mozilla Public License, version 2.0</name>
+            <url>https://github.com/igia/igia-commons/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <organization>
+        <name>igia</name>
+        <url>http://igia.io</url>
+    </organization>
+    <developers>
+        <developer>
+            <id>igia</id>
+            <name>igia development team</name>
+            <url>http://igia.io/</url>
+            <organization>igia</organization>
+            <organizationUrl>http://igia.io/</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/igia/igia-datamask/</connection>
+        <url>https://github.com/igia/igia-datamask/</url>
+    </scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.jdom</groupId>
